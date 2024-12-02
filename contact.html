@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script> <!-- Ensure JS is loaded correctly -->
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h2>We'd love to hear from you!</h2>
+            <form id="queryForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Query" required></textarea>
+                <button type="submit">Submit Query</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code for handling form submission and displaying the pop-up
+        document.getElementById('queryForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the form from actually submitting
+            // Display a pop-up message
+            alert('Thank you for your query! It will be resolved soon.');
+            // Optionally, clear the form after submission
+            document.getElementById('queryForm').reset();
+        });
+    </script>
+
+</body>
+
+</html>

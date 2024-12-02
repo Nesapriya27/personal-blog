@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Personal Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog-posts">
+            <h1>Blog Posts</h1>
+            <div id="post-list">
+                <!-- First Post Box -->
+                <div class="post-box">
+                    <h2>First Blog Post</h2>
+                    <p>This is the first blog post. It's a placeholder for now. More content will be added soon!</p>
+                </div>
+
+                <!-- Second Post Box -->
+                <div class="post-box">
+                    <h2>Second Blog Post</h2>
+                    <p>This is the second blog post. It's another placeholder. Stay tuned for more!</p>
+                </div>
+
+                <!-- Product Launch Box -->
+                <div class="post-box product-launch-box">
+                    <h2>Exciting New Product Launch!</h2>
+                    <p>We are thrilled to announce the launch of our newest product, a revolutionary smart gadget designed to make your life easier. With cutting-edge technology, it integrates seamlessly into your daily routine.</p>
+                    <p>This product is perfect for those who value convenience and efficiency. It comes with amazing features such as voice control, a sleek design, and advanced battery life, making it a must-have for tech enthusiasts.</p>
+                    <p>Stay tuned for more details as we unveil exclusive offers and the official release date. We can't wait for you to experience it firsthand!</p>
+                </div>
+            </div>
+
+            <section id="new-post-form">
+                <h2>Create a New Post</h2>
+                <form id="postForm">
+                    <input type="text" id="postTitle" placeholder="Post Title" required>
+                    <textarea id="postContent" rows="5" placeholder="Write your post here..." required></textarea>
+                    <button type="submit">Submit Post</button>
+                </form>
+                <p id="responseMessage" class="hidden"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
