@@ -29,8 +29,8 @@ This is a personal blog project created using HTML, CSS, and JavaScript. The blo
 4. **Fixing Authentication Issues**
    - Configured Git with the correct username and email for commits using:
      ```bash
-     git config --global user.name "Your Name"
-     git config --global user.email "your-email@example.com"
+     git config --global user.name "Nesapriya27"
+     git config --global user.email "priyanesan27@gmail..com"
      ```
 
  5. **Resolving Push Issues**
